@@ -11,3 +11,7 @@ Following command is used to create livewire component
 Following command is used to create livewire layout
 
 `php artisan livewire:layout`
+
+Following command is used to create livewire component with test file
+
+`php artisan make:livewire <COMPONENT_NAME> --test`
