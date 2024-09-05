@@ -17,10 +17,10 @@
 
 <body>
     <nav>
-        <a @class(['current' => request()->is('/')]) href="/">Todos</a>
-        <a @class(['current' => request()->is('counter')]) href="/counter">Counter</a>
-        <a @class(['current' => request()->is('posts')]) href="/posts">Posts</a>
-        <a @class(['current' => request()->is('create-post')]) href="/create-post">Create Post</a>
+        <a wire:navigate @class(['current' => request()->is('/')]) href="/">Todos</a>
+        <a wire:navigate @class(['current' => request()->is('counter')]) href="/counter">Counter</a>
+        <a wire:navigate @class(['current' => request()->is('posts')]) href="/posts">Posts</a>
+        <a wire:navigate @class(['current' => request()->is('create-post')]) href="/create-post">Create Post</a>
     </nav>
     {{ $slot }}
 </body>
