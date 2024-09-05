@@ -14,6 +14,7 @@
     <nav>
         <a @class(['current' => request()->is('/')]) href="/">Todos</a>
         <a @class(['current' => request()->is('counter')]) href="/counter">Counter</a>
+        <a @class(['current' => request()->is('posts')]) href="/posts">Posts</a>
     </nav>
     {{ $slot }}
 </body>
