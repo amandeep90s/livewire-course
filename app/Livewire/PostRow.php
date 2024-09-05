@@ -2,16 +2,13 @@
 
 namespace App\Livewire;
 
+use App\Models\Post;
 use Livewire\Component;
 
 class PostRow extends Component
 {
-    public $post;
+    public Post $post;
 
-    public function mount($post)
-    {
-        $this->post = $post;
-    }
 
     public function archive()
     {
