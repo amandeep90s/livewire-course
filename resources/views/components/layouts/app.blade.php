@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ $title ?? 'Page Title' }}</title>
+
+    <style>
+        .archived {
+            background-color: #128b4f;
+            color: white
+        }
+    </style>
 </head>
 
 <body>
